@@ -11,7 +11,7 @@ const config_1 = __importDefault(require("./config/config"));
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
-const PORT = config_1.default.get("port");
+const PORT = process.env.PORT || config_1.default.port;
 app.get("/", (req, res) => {
   res.send("BAP Running");
 });
