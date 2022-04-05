@@ -1,7 +1,7 @@
 {
     "bg_uri": "http://localhost:5000",
     "bap_id": "MOCK_BAP_V2",
-    "bap_uri": "http://localhost:3005",
+    "bap_uri": "https://test-bap.herokuapp.com/",
     "port": "3005",
     "bpp_id": "BAP_v2"
 }
