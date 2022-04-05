@@ -12,6 +12,9 @@ const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
 const PORT = config_1.default.get("port");
+app.get("/", (req, res) => {
+  res.send("BAP Running");
+});
 app.use("/on_search", require("./routes/v1/on_search"));
 app.use("/on_select", require("./routes/v1/on_select"));
 app.use("/on_init", require("./routes/v1/on_init"));
